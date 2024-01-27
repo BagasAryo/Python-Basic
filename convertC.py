@@ -14,6 +14,10 @@ fahren = float(9/5*cel+32)
 
 print("nilai konversi celcius ke reamur adalah: ", fahren, "fahrenheit")
 
+# konversi fahrenheit ke kelvin
 
-# cel = float(input("masukkan nilai celcius : "))
-# cel = float(input("masukkan nilai celcius : "))
+Fahre2 = float(input('masukkan nilai fahrenheit: '))
+
+convFahre = float((5/9*(Fahre2-32))+273)
+
+print('nilai konversi fahrenheit ke kelvin adalah: ', convFahre, 'kelvin')
