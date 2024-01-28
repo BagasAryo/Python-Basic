@@ -64,3 +64,13 @@ a = True
 b = True
 c = a ^ b
 print(a, 'XOR', b, '=', c)
+
+
+# latihan komparasi dan logika
+inputUser = int(input('\nmasukkan angka\nyang kurang dari 3\natau\nlebih dari 10: '))
+
+isKurangDari = (inputUser < 3)
+print('Kurang dari 3 =', isKurangDari)
+
+isLebihDari = (inputUser > 10)
+print('Lebih dari 10 =', isLebihDari)
