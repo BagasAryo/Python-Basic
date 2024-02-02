@@ -18,11 +18,13 @@ print('the length is ' + str(length))
 
 x = "Ujang"
 check = x in complete
-print('apakah ada char/string ' + x + ' di dalam kalimat ' + complete + ' ? ' + str(check))
+print('apakah ada char/string ' + x +
+      ' di dalam kalimat ' + complete + ' ? ' + str(check))
 
 x = "Ujang"
 check = x not in complete
-print('apakah tidak ada char/string ' + x + ' di dalam kalimat ' + complete + ' ? ' + str(check))
+print('apakah tidak ada char/string ' + x +
+      ' di dalam kalimat ' + complete + ' ? ' + str(check))
 
 # indexing
 print('\nindex ke-0:', complete[0])
@@ -44,3 +46,48 @@ print('ASCII code untuk spasi adalah: ' + chr(data))
 name = 'Oding koroding kiding'
 jumlah = name.count('n')
 print('jumlah n pada', name, 'adalah', jumlah)
+
+# part 2
+
+# merubah case dari string
+nama = 'bagas aryo priyatama'
+print('namaku: ' + nama.upper())
+print('namaku: ' + nama.capitalize())
+
+# pengecekan isX
+buah = 'MANGGA'
+shall_buah = buah.isupper()
+print(buah + ' = ' + str(shall_buah))
+
+pengecekanLangsung = 'Vortex Series Xera'.startswith('Vortex')
+print('startwith = ' + str(pengecekanLangsung))
+pengecekanLangsung = 'Vortex Series Xera'.endswith('xera')
+print('endswith = ' + str(pengecekanLangsung))
+
+# penggabungan dan pemisahan / join dan split
+keyb = ['fantech', 'maxfit', 'bagus']
+gabung = ' - '.join(keyb)
+print(keyb)
+print(gabung)
+
+mouse = 'noir m1 lite'
+pisah = mouse.split(' ')
+print(pisah)
+print(mouse)
+
+# allocation character rjust() ljust() center()
+kanan = 'kananbang'.rjust(10)
+print('\'' + kanan + '\'')
+
+kiri = 'kiribang'.ljust(10)
+print('\'' + kiri + '\'')
+
+tengah = 'tengahbang'.center(12, '=')
+print('\'' + tengah + '\'')
+
+# kebalikannya - strip
+kiri = kiri.strip()
+print('\'' + kiri + '\'')
+
+tengah = tengah.strip('=')
+print('\'' + tengah + '\'')
