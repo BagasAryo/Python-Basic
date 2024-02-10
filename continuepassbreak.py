@@ -9,6 +9,7 @@ while angka < 3:
         # print('love u')
     print(angka)
 print('\n')
+
 # 2. continue -> berfungsi sebagai
 kelas = 7
 while kelas > 2:
@@ -16,6 +17,18 @@ while kelas > 2:
     print(f'mantap {kelas}')
     if kelas == 5:
         print(f'angka {kelas}!')
-        continue # semua perintah yang ada dibawahnya akan di skip dan mengulang dari awal
+        continue  # semua perintah yang ada dibawahnya akan di skip dan mengulang dari awal
     print('diluar if')
 print('keluar while')
+print('\n')
+
+# 3. Break
+angkaBreak = 0
+while angkaBreak < 5:
+    angkaBreak += 1
+    print(f'angka sekarang sedang berada di angka {angkaBreak}')
+    if angkaBreak == 3:
+        print('mantap')
+        break
+    print('apakabar')
+print('akhiru kalam')
