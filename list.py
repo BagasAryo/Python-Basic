@@ -30,7 +30,7 @@ print(list_for_if)
 # Manipulate data
 # 1. operasi
 data = ['muh', 'fifhal', 'elang', 'satria']
-print(data)
+print(f'\n{data}')
 
 last_data = data[-1]
 print(last_data)
@@ -60,3 +60,52 @@ print(f'data setelah 1 data dihapus: \n{data}')
 # remove data paling belakang
 data.pop()
 print(f'data setelah 1 data dihapus lagi: \n{data}')
+
+
+# Operation data
+oper_angka = [1, 2, 5, 6, 6, 6, 5, 4, 7, 8, 3, 4, 2, 1, 0]
+oper_angka.count(5)
+print(f'\njumlah angka 5 = {oper_angka}')
+
+oper_nama = ['nadya', 'annisa', 'larasati']
+index_nadya = oper_nama.index('nadya')
+print(f'index nadya = {index_nadya}')
+
+print(f'angka sebelum diurutkan = {oper_angka}')
+oper_angka.sort()
+print(f'angka sesudah diurutkan = {oper_angka}')
+print(f'nama sebelum diurutkan = {oper_nama}')
+oper_nama.sort()
+print(f'nama sesudah diurutkan = {oper_nama}')
+oper_angka.reverse()
+oper_nama.reverse()
+print(f'angka dan nama setelah di reverse/di sorting by descend = \n{oper_angka}\n{oper_nama}')
+
+
+# copy list
+a = [1, 2, 5, 5, 4, 6]
+b = a
+print(f'\nini adalah list a : {a}\nini adalah list b : {b}')
+
+a[2] = 4
+print(f'(sesudah diganti) \nini adalah list a : {a}\nini adalah list b : {b}')
+'''
+ketika data satu index didalam salah satu list diganti, maka satu index yang sama pada list lainnya ikut tergantikan
+solusi agar tidak terjadi hal spt itu adalah dengan menggunakan method
+'''
+print(f'\nadress a adalah {hex(id(a))}')
+print(f'adress b adalah {hex(id(b))}')
+
+c = a.copy()
+print(f'\nadress a adalah {hex(id(a))}')
+print(f'adress b adalah {hex(id(b))}')
+print(f'adress c adalah {hex(id(c))}')
+
+print(f'\na = {a}')
+print(f'b = {b}')
+print(f'c = {c}')
+
+c[2] = 3
+print(f'\na = {a}')
+print(f'b = {b}')
+print(f'c = {c}')
